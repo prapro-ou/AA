@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 462db1414d4894148828454e0118ed72
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - QuestionText: {instanceID: 0}
+  - resultText: {instanceID: 0}
+  - japaneseFont: {fileID: 11400000, guid: 58a018e73c6eb4c0d8f333905a8eedc5, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

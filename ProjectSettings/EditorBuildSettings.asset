@@ -20,4 +20,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main3.unity
     guid: 1dcc998167dc65f4f9016b20697e4200
+  - enabled: 1
+    path: Assets/Scenes/Drawer.unity
+    guid: 3220acd6292304147bf270fe49d505ea
+  - enabled: 1
+    path: Assets/Scenes/Escape Door.unity
+    guid: 31bafdbe57753504b8f7a83425cc21e0
+  - enabled: 1
+    path: Assets/Scenes/MatchPuzzle.unity
+    guid: f3a7f383b63aeba40a9f5aee31a5ffdc
+  - enabled: 1
+    path: Assets/Scenes/Locker.unity
+    guid: 31b64d61b03d0c743a3904c5adec5d11
+  - enabled: 1
+    path: Assets/Scenes/pc_Waitingpassword.unity
+    guid: deba52180a1694244af47a6a69ed38f7
   m_configObjects: {}
