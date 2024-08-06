@@ -33,6 +33,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Locker.unity
     guid: 31b64d61b03d0c743a3904c5adec5d11
   - enabled: 1
+    path: Assets/Scenes/KeyBoardScene.unity
+    guid: 6aacb7dd2808cd9429a5d033ddddd50e
+  - enabled: 1
+    path: Assets/Scenes/Desktop.unity
+    guid: 5f9351dc93730114e9da8ef25da0c0b3
+  - enabled: 1
     path: Assets/Scenes/Puzzle8.unity
     guid: cb489ed4f7e6c3742951f703f4518eaf
   - enabled: 1
