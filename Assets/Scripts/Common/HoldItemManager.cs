@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class SceneChanger : MonoBehaviour
+
+public class HoldItemManager : MonoBehaviour
 {
-  [SerializeField] private string sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +16,7 @@ public class SceneChanger : MonoBehaviour
         
     }
 
-    public void ChangeScene() {
+    public void UpdateItemImage(string new_image) {
+
     }
 }
