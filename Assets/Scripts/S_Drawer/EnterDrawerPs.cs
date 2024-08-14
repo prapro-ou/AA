@@ -41,5 +41,6 @@ public class EnterDrawerPs : MonoBehaviour
     public void getClick()
     {
         Key_image.SetActive(false);
+        GetMessage.SetActive(false);
     }
 }

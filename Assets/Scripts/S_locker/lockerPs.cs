@@ -50,5 +50,6 @@ public class lockerPs : MonoBehaviour
     public void GetKeyClick()
     {
         Key_image.SetActive(false);
+        KeyText.SetActive(false);
     }
 }
