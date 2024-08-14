@@ -46,4 +46,9 @@ public class lockerPs : MonoBehaviour
             //Debug.Log("間違い");
         }
     }
+
+    public void GetKeyClick()
+    {
+        Key_image.SetActive(false);
+    }
 }

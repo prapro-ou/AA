@@ -37,4 +37,9 @@ public class EnterDrawerPs : MonoBehaviour
             //Debug.Log("間違い");
         }
     }
+
+    public void getClick()
+    {
+        Key_image.SetActive(false);
+    }
 }

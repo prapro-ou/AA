@@ -14,13 +14,7 @@ public class InputAnswer : MonoBehaviour
     void Start()
     {
         inputField =  inputField.GetComponent<InputField> ();
-        Debug.Log("問題なし");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+       // Debug.Log("問題なし");
     }
 
     public void GetInput()
