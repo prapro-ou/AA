@@ -17,6 +17,7 @@ public class ItemData : MonoBehaviour
   [SerializeField] GameObject LOGIC_MEMO;
 
   private static List<string> item_list = new List<string>();
+  private static List<string> added_item_list = new List<string>();
 
   private static string hold_item_name = null;
     // Start is called before the first frame update
@@ -64,6 +65,10 @@ public class ItemData : MonoBehaviour
       return hold_item_name;
     }
 
+    public static bool IsAdded(string item_name) {
+        return added_item_list.Contains(item_name);
+    }
+
     public static bool Contains(string item_name) {
       if (item_list.Contains(item_name)) 
         return true;
@@ -80,6 +85,7 @@ public class ItemData : MonoBehaviour
       }
 
       item_list.Add(item_name);
+      added_item_list.Add(item_name);
       GetItemObject(item_name).SetActive(true);
 
       Debug.Log("Get item!");

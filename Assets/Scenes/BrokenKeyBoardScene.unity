@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -561,6 +562,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2047298223}
     m_Modifications:
+    - target: {fileID: 2220243884814227708, guid: 456948590c6e5984fade1dbfa17108af, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 44fcdb8714744524897efc72037863cd, type: 3}
     - target: {fileID: 6669733832884588180, guid: 456948590c6e5984fade1dbfa17108af, type: 3}
       propertyPath: m_Name
       value: ItemBox
