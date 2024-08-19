@@ -10,7 +10,7 @@ public class QuizManager : MonoBehaviour
     public TMP_FontAsset japaneseFont;
     public GameObject resultPanel;
     public GameObject retryButton;
-    public Image resultImage;
+    public Button resultButton;
     public Sprite ItemImage;
 
     private string question;
@@ -68,8 +68,8 @@ public class QuizManager : MonoBehaviour
         resultText.text = "正解!";
         resultPanel.SetActive(true);  // 결과 패널 표시
         retryButton.SetActive(false);  // 다시 시도 버튼 숨기기
-        resultImage.sprite = ItemImage;
-        resultImage.gameObject.SetActive(true);
+        resultButton.image.sprite = ItemImage;
+        resultButton.gameObject.SetActive(true);
     }
 
     public void wrong()
@@ -77,7 +77,7 @@ public class QuizManager : MonoBehaviour
         resultText.text = "不正解.";
         resultPanel.SetActive(true);  // 결과 패널 표시
         retryButton.SetActive(true);  // 다시 시도 버튼 표시
-        resultImage.gameObject.SetActive(false);
+        resultButton.gameObject.SetActive(false);
     }
 
     public void RetryQuiz()
