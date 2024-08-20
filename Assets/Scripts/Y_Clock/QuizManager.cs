@@ -24,6 +24,8 @@ public class QuizManager : MonoBehaviour
         correctAnswer = 4;
 
         makeQuestion();
+
+        resultButton.onClick.AddListener(HideResultButton);
     }
 
     void makeQuestion()
@@ -83,5 +85,10 @@ public class QuizManager : MonoBehaviour
     public void RetryQuiz()
     {
         makeQuestion();
+    }
+
+    private void HideResultButton()
+    {
+        resultButton.gameObject.SetActive(false);
     }
 }
