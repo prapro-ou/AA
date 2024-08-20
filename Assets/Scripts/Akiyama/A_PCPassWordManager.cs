@@ -27,6 +27,7 @@ public class A_PCPassWordManager : MonoBehaviour
             if (string.Join("", pwArray) == "TANUKI")
             {
                 Debug.Log("Clear!");
+                ActionSceneData.ClearScene("KeyBoardScene");
                 SceneManager.LoadScene("Desktop");
             }
             else

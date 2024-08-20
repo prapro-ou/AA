@@ -12,7 +12,9 @@ public class ActionSceneData : MonoBehaviour
         "MatchPuzzle",
         "pc_Waitingpassword",
         "Puzzle8",
-        "SampleScene"
+        "SampleScene",
+        "BrokenKeyBoardScene",
+        "KeyBoardScene"
     };
     private static List<string> cleared_scene_name = new List<string>();
 
@@ -27,7 +29,7 @@ public class ActionSceneData : MonoBehaviour
 
     public static void ClearScene(string scene_name) {
         if (action_scene_list.Contains(scene_name)) {
-            Debug.Log("Delete Scene!");
+            Debug.Log("Delete Scene " + scene_name);
             cleared_scene_name.Add(scene_name);
         }
     }
