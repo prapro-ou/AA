@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class A_PCPassWordManager : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class A_PCPassWordManager : MonoBehaviour
             if (string.Join("", pwArray) == "TANUKI")
             {
                 Debug.Log("Clear!");
+                SceneManager.LoadScene("Desktop");
             }
             else
             {

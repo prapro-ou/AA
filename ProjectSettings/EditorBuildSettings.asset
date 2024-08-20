@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pc_Waitingpassword.unity
     guid: deba52180a1694244af47a6a69ed38f7
+  - enabled: 1
+    path: Assets/Scenes/BrokenKeyBoardScene.unity
+    guid: 4fa09f3a4db6cec4f9b895966b76caed
   m_configObjects: {}

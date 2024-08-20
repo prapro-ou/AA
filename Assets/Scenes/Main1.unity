@@ -195,11 +195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7066904770006229169, guid: 45e382f8977143d43be8586190836d3e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.047097396
+      value: -0.047097445
       objectReference: {fileID: 0}
     - target: {fileID: 7066904770006229169, guid: 45e382f8977143d43be8586190836d3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05146803
+      value: -0.051468015
       objectReference: {fileID: 0}
     - target: {fileID: 7066904770006229169, guid: 45e382f8977143d43be8586190836d3e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -574,6 +574,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5946184678346205476, guid: 1371274c31151fc4e93fb0905bce2ad7, type: 3}
   m_PrefabInstance: {fileID: 726480475}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &726480477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5339046184563059215, guid: 1371274c31151fc4e93fb0905bce2ad7, type: 3}
+  m_PrefabInstance: {fileID: 726480475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &788062883
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,7 +898,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5339046184563059215, guid: 1371274c31151fc4e93fb0905bce2ad7, type: 3}
       propertyPath: m_Name
-      value: ActionSceneButton
+      value: LockerSceneButton
       objectReference: {fileID: 0}
     - target: {fileID: 5946184678346205476, guid: 1371274c31151fc4e93fb0905bce2ad7, type: 3}
       propertyPath: m_Pivot.x
@@ -999,6 +1004,11 @@ PrefabInstance:
 --- !u!224 &1180051285 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5946184678346205476, guid: 1371274c31151fc4e93fb0905bce2ad7, type: 3}
+  m_PrefabInstance: {fileID: 1180051284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1180051286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5339046184563059215, guid: 1371274c31151fc4e93fb0905bce2ad7, type: 3}
   m_PrefabInstance: {fileID: 1180051284}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1390739842
@@ -1560,6 +1570,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5946184678346205476, guid: 1371274c31151fc4e93fb0905bce2ad7, type: 3}
   m_PrefabInstance: {fileID: 1757797590}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1757797592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5339046184563059215, guid: 1371274c31151fc4e93fb0905bce2ad7, type: 3}
+  m_PrefabInstance: {fileID: 1757797590}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1814234759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1676,6 +1691,53 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2176187093691138720, guid: f4a908e5445539b41aa7483db46ce5ed, type: 3}
   m_PrefabInstance: {fileID: 1814234759}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1967836486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1967836487}
+  - component: {fileID: 1967836488}
+  m_Layer: 0
+  m_Name: ActionSceneSetter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1967836487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967836486}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.7693241, y: -0.52860034, z: 0.62706757}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1967836488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967836486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed4b565310bca048a2b9bc2e559b2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locker: {fileID: 1180051286}
+  MatchPuzzle: {fileID: 1757797592}
+  Drawer: {fileID: 726480477}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1685,3 +1747,4 @@ SceneRoots:
   - {fileID: 788062886}
   - {fileID: 227560460}
   - {fileID: 237246410}
+  - {fileID: 1967836487}

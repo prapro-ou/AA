@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class A_KeyManager : MonoBehaviour
 {
@@ -17,7 +18,8 @@ public class A_KeyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!A.activeSelf && !R.activeSelf && !N.activeSelf) 
+            SceneManager.LoadScene("KeyBoardScene");   
     }
 
     private GameObject GetItemObject(string KeyName) {
