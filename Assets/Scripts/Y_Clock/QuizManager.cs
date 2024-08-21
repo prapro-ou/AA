@@ -13,17 +13,24 @@ public class QuizManager : MonoBehaviour
     public Button resultButton;
     public Sprite ItemImage;
 
+    public AudioSource audioSource;
+    public AudioClip correctSound;
+    public AudioClip wrongSound;
+
     private string question;
     private string[] answers;
     private int correctAnswer;
 
     void Start()
-    {
+    {        
         question = "以下の反転時計の時間の合計を求めよ．";
         answers = new string[] { "18時20分", "18時30分", "19時15分", "19時20分", "19時15分", "19時30分"};
-        correctAnswer = 4;
+        correctAnswer = 3;
 
         makeQuestion();
+
+        resultPanel.SetActive(false);
+        retryButton.SetActive(false);
 
         resultButton.onClick.AddListener(HideResultButton);
     }
@@ -40,55 +47,76 @@ public class QuizManager : MonoBehaviour
     {
         for (int i = 0; i < options.Length; i++)
         {
-            if (options[i] == null)
-            {
-                Debug.LogError($"Option {i} is not assigned.");
-                continue;
-            }
+            Button optionButton = options[i].GetComponent<Button>();
+            optionButton.onClick.RemoveAllListeners(); // 기존 리스너 제거
 
             options[i].GetComponent<Answer>().isCorrect = false;
 
             TextMeshProUGUI optionText = options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-            if (optionText == null)
-            {
-                Debug.LogError($"Option {i} does not have a TextMeshProUGUI component.");
-                continue;
-            }
 
             optionText.text = answers[i];
             optionText.font = japaneseFont;
 
-            if (correctAnswer == i + 1)
+            if (correctAnswer == i)
             {
                 options[i].GetComponent<Answer>().isCorrect = true;
+                optionButton.onClick.AddListener(() => HandleAnswer(true));
+            }
+            else
+            {
+                optionButton.onClick.AddListener(() => HandleAnswer(false));
             }
         }
     }
 
-    public void correct()
+    private void HandleAnswer(bool isCorrect)
     {
-        resultText.text = "正解!";
-        resultPanel.SetActive(true);  // 결과 패널 표시
-        retryButton.SetActive(false);  // 다시 시도 버튼 숨기기
-        resultButton.image.sprite = ItemImage;
-        resultButton.gameObject.SetActive(true);
-    }
+        if (isCorrect)
+        {
+            resultText.text = "正解!";
+            resultButton.image.sprite = ItemImage;
+            resultButton.gameObject.SetActive(true);
+            PlayCorrectSound();
+        }
+        else
+        {
+            resultText.text = "不正解.";
+            resultButton.gameObject.SetActive(false);
+            PlayWrongSound();
+        }
 
-    public void wrong()
-    {
-        resultText.text = "不正解.";
         resultPanel.SetActive(true);  // 결과 패널 표시
-        retryButton.SetActive(true);  // 다시 시도 버튼 표시
-        resultButton.gameObject.SetActive(false);
+        retryButton.SetActive(isCorrect ? false : true);  // 정답일 경우 Retry 버튼 숨기기
     }
 
     public void RetryQuiz()
     {
+        resultPanel.SetActive(false);
+        retryButton.SetActive(false);
+
         makeQuestion();
     }
 
     private void HideResultButton()
     {
         resultButton.gameObject.SetActive(false);
+    }
+
+    private void PlayCorrectSound()
+    {
+        if (audioSource != null && correctSound != null)
+        {
+            audioSource.clip = correctSound;
+            audioSource.Play();
+        }
+    }
+
+    private void PlayWrongSound()
+    {
+        if (audioSource != null && wrongSound != null)
+        {
+            audioSource.clip = wrongSound;
+            audioSource.Play();
+        }
     }
 }
