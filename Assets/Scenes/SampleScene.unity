@@ -2389,6 +2389,18 @@ PrefabInstance:
       value: ReturnButton
       objectReference: {fileID: 0}
     - target: {fileID: 7012986060434601790, guid: fe1df51e5f929bf4281ef042fa59274a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012986060434601790, guid: fe1df51e5f929bf4281ef042fa59274a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012986060434601790, guid: fe1df51e5f929bf4281ef042fa59274a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012986060434601790, guid: fe1df51e5f929bf4281ef042fa59274a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
