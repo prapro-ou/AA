@@ -12,13 +12,17 @@ public class GameController : MonoBehaviour
     private List<GameObject> PieceList = new List<GameObject>();
 
     public GameObject key;
-    
+
+    public AudioClip Clear_se;
+
+    AudioSource audioSource;
+  
 void Start()
 
     {
         SetCorrectPos();
         CreatePieces();
-
+        audioSource = GetComponent<AudioSource>();
     }
 
  void SetCorrectPos()
@@ -141,6 +145,8 @@ public void ClearCheck()
            PieceList[8].transform.position = new Vector2(1.3f * 2, -3.26f);
 
             key.SetActive(true);
+
+            audioSource.PlayOneShot(Clear_se);
         }
 
     }

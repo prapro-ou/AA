@@ -6,14 +6,16 @@ public class PieceMove : MonoBehaviour
 {
     private GameController gameControllerCS;
 
- 
+    public AudioClip Move_se;
+
+    AudioSource audioSource;
 
     private void Start()
 
     {
 
         gameControllerCS = FindObjectOfType<GameController>();
-
+        audioSource = GetComponent<AudioSource>();
     }
 
 void PieceMoving()
@@ -73,7 +75,7 @@ void PieceMoving()
 private void OnMouseDown()
 
     {
-
+        audioSource.PlayOneShot(Move_se);
         PieceMoving();
 
     }
