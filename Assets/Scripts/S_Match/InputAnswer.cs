@@ -26,6 +26,7 @@ public class InputAnswer : MonoBehaviour
             //Debug.Log("クリア！！");
             memo.SetActive(true);
             memo_image.SetActive(true);
+            GetComponent<AudioSource>().Play();
 
         }
         else
