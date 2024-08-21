@@ -9,6 +9,10 @@ using TMPro;
 public class SceneChange: MonoBehaviour
 {
   public Image fadePanel;
+
+  [SerializeField] GameObject StartButton;
+  [SerializeField] GameObject GuideText;
+
   [SerializeField] private string sceneName;
   [SerializeField] private float fadeDuration = 1.0f;
 
@@ -26,6 +30,8 @@ public class SceneChange: MonoBehaviour
 
     public void toMainScene() {
       Debug.Log("Clicked!");
+      StartButton.SetActive(false);
+      GuideText.SetActive(false);
       StartCoroutine(SceneBlackout());
     }
 
