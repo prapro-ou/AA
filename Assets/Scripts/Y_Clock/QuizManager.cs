@@ -23,7 +23,7 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {        
-        question = "以下の反転時計の時間の合計を求めよ．";
+        question = "反転時計の時間の合計を求めよ．";
         answers = new string[] { "18時20分", "18時30分", "19時15分", "19時20分", "18時15分", "19時30分"};
         correctAnswer = 3;
 
