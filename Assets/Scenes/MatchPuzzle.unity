@@ -750,7 +750,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7ce17860569d8e428832d2e630c52b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeUpSound: {fileID: 8300000, guid: d7e76c13a40d1b84a971e5d214dc47d0, type: 3}
   inputField: {fileID: 1680079798}
+  input: {fileID: 1680079796}
   memo_image: {fileID: 1024326797}
   memo: {fileID: 100418088}
 --- !u!4 &379523232
@@ -778,8 +780,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d7e76c13a40d1b84a971e5d214dc47d0, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

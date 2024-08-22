@@ -6,7 +6,10 @@ using TMPro;
 
 public class InputAnswer : MonoBehaviour
 {
+    private AudioSource audioSource; // オーディオソース
+    public AudioClip timeUpSound; // タイムアップの音
     public InputField inputField;
+    public GameObject input;
     public GameObject memo_image;
     public GameObject memo;
     string answer = "43->113";
@@ -14,6 +17,7 @@ public class InputAnswer : MonoBehaviour
     void Start()
     {
         inputField =  inputField.GetComponent<InputField> ();
+        audioSource = this.gameObject.GetComponent<AudioSource>();
        // Debug.Log("問題なし");
     }
 
@@ -26,7 +30,8 @@ public class InputAnswer : MonoBehaviour
             //Debug.Log("クリア！！");
             memo.SetActive(true);
             memo_image.SetActive(true);
-            GetComponent<AudioSource>().Play();
+            audioSource.PlayOneShot(timeUpSound);
+            input.SetActive(false);
 
         }
         else
