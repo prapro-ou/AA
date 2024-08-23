@@ -19,6 +19,8 @@ public class ItemData : MonoBehaviour
   private static List<string> item_list = new List<string>();
   private static List<string> added_item_list = new List<string>();
 
+  private static List<string> used_item_list = new List<string>();
+
   private static string hold_item_name = null;
     // Start is called before the first frame update
     void Start()
@@ -76,6 +78,10 @@ public class ItemData : MonoBehaviour
         return false;
     }
 
+    public static bool IsUsed(string item_name) {
+      return used_item_list.Contains(item_name);
+    }
+
     // ボックスへのアイテムの追加
     public void AddItem(string item_name) {
       if (GetItemObject(item_name) == null) return;
@@ -112,6 +118,8 @@ public class ItemData : MonoBehaviour
         GetItemObject(item_name).SetActive(false);
         HoldItemImage.GetComponent<Image>().sprite = EmptyImage.GetComponent<Image>().sprite;
         HoldItemDetailImage.GetComponent<Image>().sprite = null;
+
+        used_item_list.Add(item_name);
 
         Debug.Log("Use item!");
       }
