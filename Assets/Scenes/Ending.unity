@@ -183,7 +183,6 @@ MonoBehaviour:
   - fin.
   lockDoor: {fileID: 8300000, guid: 4e5910d0eb7edf74abaf84b6c9c9f595, type: 3}
   help: {fileID: 8300000, guid: 6d0bdbf7a685ee04d8e6f23152314486, type: 3}
-  blood: {fileID: 805577824}
 --- !u!114 &171352552
 MonoBehaviour:
   m_ObjectHideFlags: 0

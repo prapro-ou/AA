@@ -13,7 +13,7 @@ public class EndingTextDisplay : MonoBehaviour
     int textCharNumber;
     string displayText;
 
-    [SerializeField] GameObject blood;
+    //[SerializeField] GameObject blood;
 
     int i;
 
@@ -60,7 +60,7 @@ public class EndingTextDisplay : MonoBehaviour
                 this.GetComponent<Text>().text = displayText;
             } 
             yield return new WaitForSeconds(2.0f);   
-            blood.SetActive(true);
+            //blood.SetActive(true);
     }
 
     private IEnumerator loop(AudioClip sound)
