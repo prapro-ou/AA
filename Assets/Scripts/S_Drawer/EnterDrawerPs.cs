@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class EnterDrawerPs : MonoBehaviour
 {
+    private AudioSource audioSource; // オーディオソース
+    public AudioClip timeUpSound; // タイムアップの音
     public InputField inputField;
     public GameObject input;
     public GameObject image;
@@ -17,6 +19,7 @@ public class EnterDrawerPs : MonoBehaviour
     void Start()
     {
         inputField =  inputField.GetComponent<InputField> ();
+        audioSource = this.gameObject.GetComponent<AudioSource>();
     }
 
     public void GetInput()
@@ -30,6 +33,7 @@ public class EnterDrawerPs : MonoBehaviour
             GetMessage.SetActive(true);
             Key_image.SetActive(true);
             input.SetActive(false);
+            audioSource.PlayOneShot(timeUpSound);
 
         }
         else

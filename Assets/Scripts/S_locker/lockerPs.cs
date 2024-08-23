@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class lockerPs : MonoBehaviour
 {
+    private AudioSource audioSource; // オーディオソース
+    public AudioClip timeUpSound; // タイムアップの音
     public GameObject EnterText;
     public GameObject Textbackground;
     public GameObject background;
@@ -18,6 +20,7 @@ public class lockerPs : MonoBehaviour
     void Start()
     {
         inputField =  inputField.GetComponent<InputField> ();
+        audioSource = this.gameObject.GetComponent<AudioSource>();
         //Debug.Log("問題なし");
     }
 
@@ -39,6 +42,7 @@ public class lockerPs : MonoBehaviour
             Key_image.SetActive(true);
             KeyText.SetActive(true);
             input.SetActive(false);
+            audioSource.PlayOneShot(timeUpSound);
 
         }
         else
