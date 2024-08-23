@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Drawer.unity
     guid: 3220acd6292304147bf270fe49d505ea
   - enabled: 1
-    path: Assets/Scenes/Escape Door.unity
+    path: Assets/Scenes/EscapeDoor.unity
     guid: 31bafdbe57753504b8f7a83425cc21e0
   - enabled: 1
     path: Assets/Scenes/MatchPuzzle.unity
