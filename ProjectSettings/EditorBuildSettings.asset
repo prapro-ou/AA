@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 855ff131d9735e4469247dfb9531fea4
   - enabled: 1
+    path: Assets/Scenes/Prologue1.unity
+    guid: 2a006d66f6ac0c14ba7aeb590126de17
+  - enabled: 1
+    path: Assets/Scenes/Prologue2.unity
+    guid: a1dead689e0c4524c9469aaa146296a6
+  - enabled: 1
     path: Assets/Scenes/Main1.unity
     guid: a0f9481d4689ff644ad781113a2fc627
   - enabled: 1
@@ -20,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main3.unity
     guid: 1dcc998167dc65f4f9016b20697e4200
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 9c920b9d056cf33489975d4543b4b660
   - enabled: 1
     path: Assets/Scenes/Drawer.unity
     guid: 3220acd6292304147bf270fe49d505ea

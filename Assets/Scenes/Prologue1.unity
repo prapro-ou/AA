@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -755,6 +756,7 @@ MonoBehaviour:
   - "\u307E\u3055\u304B\u3042\u3093\u306A\u3053\u3068\u306B\u306A\u308B\u306A\u3093\u3066\uFF0E\uFF0E\uFF0E"
   door: {fileID: 8300000, guid: 20a7794debc2b35418e27fe813a59641, type: 3}
   key: {fileID: 8300000, guid: 5a58ab18092748b49be1ddfa3a28777d, type: 3}
+  next_scene_name: Prologue2
 --- !u!114 &1420009015
 MonoBehaviour:
   m_ObjectHideFlags: 0

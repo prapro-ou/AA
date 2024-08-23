@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -909,7 +910,7 @@ MonoBehaviour:
   fadePanel: {fileID: 144088630}
   StartButton: {fileID: 652415909}
   GuideText: {fileID: 2094798592}
-  sceneName: Main1
+  sceneName: Prologue1
   fadeDuration: 1.5
 --- !u!1 &2006615893
 GameObject:
